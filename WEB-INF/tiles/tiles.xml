@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE tiles-definitions PUBLIC   "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+        
+        <tiles-definitions>
+        
+        <definition name="generic.layout" template="/WEB-INF/templates/generic.jsp">
+        
+        <put-attribute name="title" value=""/>
+        <put-attribute name="header" value="/WEB-INF/templates/header.jsp"/>
+        <put-attribute name="nav" value="/WEB-INF/templates/nav.jsp"/>
+        <put-attribute name="nav2" value="/WEB-INF/templates/nav2.jsp"/>
+        <put-attribute name="body" value=""/>
+        <put-attribute name="footer" value="/WEB-INF/templates/footer.jsp"/>
+         
+        </definition>
+        
+        <definition name="home" extends="generic.layout">
+         <put-attribute name="title" value="Home"/> 
+        <put-attribute name="body" value="/WEB-INF/pages/home.jsp"/>
+        </definition>
+        
+        <definition name="reports" extends="generic.layout">
+         <put-attribute name="title" value="Reports"/>
+          <put-attribute name="nav2" value="/WEB-INF/templates/nav2.jsp"/>
+        <put-attribute name="body" value="/WEB-INF/pages/reports.jsp"/>
+        </definition>
+        
+        <definition name="denied" extends="generic.layout">
+         <put-attribute name="title" value="Denied"/>
+        <put-attribute name="body" value="/WEB-INF/pages/denied.jsp"/>
+        </definition>
+        
+        <definition name="admin" extends="generic.layout">
+         <put-attribute name="title" value="Admin"/>
+        <put-attribute name="body" value="/WEB-INF/pages/admin.jsp"/>
+        </definition>
+        
+        <definition name="dashboard" extends="generic.layout">
+         <put-attribute name="title" value="Dashboard"/>
+        <put-attribute name="body" value="/WEB-INF/pages/dashboard.jsp"/>
+        </definition>
+        
+        <definition name="register" extends="generic.layout">
+         <put-attribute name="title" value="Register"/>
+        <put-attribute name="body" value="/WEB-INF/pages/register.jsp"/>
+        </definition>
+        
+        
+        
+        
+        </tiles-definitions>
